@@ -13,5 +13,5 @@ class OnlineShop:
     sector_code = 'ELE'
     is_public_company = False
 
-    def get_sector(self):
-        return self.sector
+    def get_sector():
+        return OnlineShop.sector
