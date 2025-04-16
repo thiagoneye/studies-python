@@ -7,7 +7,6 @@ Create an instance of the Person class and set the first_name attribute to 'John
 Print the value of the first_name attribute of this instance to the console.
 """
 
-# Way 1 (Most common way)
 class Person:
     def __init__(self, first_name):
         self._first_name = first_name
@@ -15,16 +14,6 @@ class Person:
     @property
     def first_name(self):
         return self._first_name
-
-# Way 2 (Less common way)
-class Person:
-    def __init__(self, first_name):
-        self._first_name = first_name
-    
-    def get_first_name(self):
-        return self._first_name
-    
-    first_name = property(fget=get_first_name)
 
 person = Person('John')
 print(person.first_name)
